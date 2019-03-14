@@ -15,12 +15,16 @@ var (
 
 func init() {
 	flag.BoolVar(&help, "h", false, "Print help.")
-	flag.BoolVar(&encode, "e", false, "Encode URL. eg, `-e $URL'")
-	flag.BoolVar(&decode, "d", false, "Decode URL. eg, `-e $URL`")
+	flag.BoolVar(&encode, "e", false, "Encode URL. eg, -e `$URL`")
+	flag.BoolVar(&decode, "d", false, "Decode URL. eg, -d `$URL`")
 }
 
 func main() {
 	flag.Parse()
+	if help {
+		flag.Usage()
+		os.Exit(0)
+	}
 	if (encode || decode) && len(flag.Args()) == 0 {
 		fmt.Println("URL parameter is required when using -e or -d")
 		os.Exit(1)
