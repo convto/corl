@@ -13,14 +13,14 @@ $ go get -u github.com/srttk/coul
 Print help.
 
 ### -d $URL
-url decode `$URL`, eg.
+Decode `$URL`, eg.
 ```
 $ coul -d https%3A%2F%2Fgithub.com%2Fsrttk
 https://github.com/srttk
 ```
 
 ### -e $URL
-url encode `$URL`, eg.
+Encode `$URL`, eg.
 ```
 $ coul -e https://github.com/srttk
 https%3A%2F%2Fgithub.com%2Fsrttk
