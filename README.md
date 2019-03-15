@@ -26,5 +26,5 @@ $ coul -e https://github.com/srttk
 https%3A%2F%2Fgithub.com%2Fsrttk
 ```
 
-## LISENCE
+## LICENSE
 MIT
