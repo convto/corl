@@ -1,11 +1,11 @@
-# coul
+# corl
 This is cmd for url convert. It supports decode and encode.
 
-coul means **co**nvert **U**R**L**.
+corl means **co**nvert U**RL**.
 
 ## installation
 ```
-$ go get -u github.com/srttk/coul
+$ go get -u github.com/srttk/corl
 ```
 
 ## usage
