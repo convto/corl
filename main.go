@@ -15,8 +15,8 @@ var (
 
 func init() {
 	flag.BoolVar(&help, "h", false, "Print help.")
-	flag.BoolVar(&encode, "e", false, "Encode URL. eg, -e `$URL`")
-	flag.BoolVar(&decode, "d", false, "Decode URL. eg, -d `$URL`")
+	flag.BoolVar(&encode, "e", false, "Encode URL. eg, corl -e `$URL`")
+	flag.BoolVar(&decode, "d", false, "Decode URL. eg, corl -d `$URL`")
 }
 
 func main() {
@@ -48,5 +48,5 @@ func main() {
 		fmt.Println(decURL)
 		os.Exit(0)
 	}
-	os.Exit(0)
+	fmt.Printf("This is cmd for url convert. It supports decode and encode.\nIf you want to know how to use, please type\n\n  corl -h\n\n")
 }
